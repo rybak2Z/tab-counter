@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="popup.js"></script>
+        <link rel="stylesheet" href="popup.css", type="text/css">
+    </head>
+    <body>
+        <h1 id="total">500</h1>
+        <h2>open tabs</h2>
+
+        <hr>
+
+        <!-- <h1 id="weekChange">7-day statistics <span id="dailyAvg">-500</span> | <span id="weekPercentage">-5.0%</span></h1>
+        <span>The daily average change of your tab count is:<span id="dailyAvg">-500</span></span> -->
+
+
+        <h1 id="weekChange">7-day statistics</h1>
+        <div class="flex-container">
+            <span class="statsText">Daily average change of your tab count</span>
+            <span class="statsNumber" id="dailyAvg">-500</span>
+        </div>
+        <div class="flex-container">
+            <span class="statsText">Change of your tab count from 6 days ago</span>
+            <span class="statsNumber" id="weekPercentage">-5.0 %</span>
+        </div>
+
+        <hr>
+
+        <h1 id="allTimeChange">All-time statistics</h1>
+        <div>
+            <div class="flex-container">
+                <span class="statsText">Absolute change</span>
+                <span class="statsNumber" id="alltimeAbsChange">-700</span>
+            </div>
+            <button id="resetAlltimeRel">Reset</button>
+        </div>
+        <div>
+            <div class="flex-container">
+                <span class="statsText">Relative change</span>
+                <span class="statsNumber" id="alltimeRelChange">-30.0 %</span>
+            </div>
+            <button id="resetAlltimeAbs">Reset</button>
+        </div>
+    </body>
+</html>

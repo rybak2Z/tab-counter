@@ -1,0 +1,16 @@
+{
+    "name": "Tabs Counter",
+    "description": "Counts the tabs you opened.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
